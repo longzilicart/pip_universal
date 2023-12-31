@@ -36,23 +36,42 @@ Remarkably, PIP is interpretable, flexible, robust, and easy-to-use, showing gre
 
 ## Updates
 
-- [x] 23.12.8: initial commit
-- [ ] source code coming very soon
-- [ ] demos
+- [x] initial commit
+- [x] clean code and description :joy:
+- [ ] demos (coming soon) :joy:
+- [ ] future versions
 
 
 ## Training and testing
-The source code is coming very soon.
+please see ```/src/train.sh``` for the training and data preparation. Tester and demo are coming soon to fit the reformatted code. 
 
 
 ## Requirements and Data preparation
+To set up the environment, please refer to ```/src/requirements.txt```. please refer to ```prepare_args()``` in the ```/src/PIPNet_Trainer.py``` about how to place the dataset. 
 
-To set up the environment, please refer to requirements.txt. 
+You could find the dataset we used in the paper at following and the preparation is similar to [PromptIR](https://github.com/va1shn9v/PromptIR) and [AIRNet](https://github.com/XLearning-SCU/2022-CVPR-AirNet/tree/main).
+
+Denoising: [BSD400](https://drive.google.com/file/d/1idKFDkAHJGAFDn1OyXZxsTbOSBx9GS8N/view?usp=sharing), [WED](https://ece.uwaterloo.ca/~k29ma/exploration/), [Urban100](https://drive.google.com/drive/folders/1B3DJGQKB6eNdwuQIhdskA64qUuVKLZ9u)
+
+Deraining: [Rain100L](https://drive.google.com/drive/folders/1-_Tw-LHJF4vh8fpogKgZx1EQ9MhsJI_f?usp=sharing)
+
+Dehazing: [RESIDE](https://sites.google.com/view/reside-dehaze-datasets/reside-v0) (SOTS)
+
+Deblurring: [GoPro](https://seungjunnah.github.io/Datasets/datasets.html)
+
+Lowlight: [LOL](https://www.kaggle.com/datasets/soumikrakshit/lol-dataset)
 
 
 ## Citation
 
-
+```
+@article{li2023prompt,
+  title={Prompt-In-Prompt Learning for Universal Image Restoration},
+  author={Li, Zilong and Lei, Yiming and Ma, Chenglong and Zhang, Junping and Shan, Hongming},
+  journal={arXiv preprint arXiv:2312.05038},
+  year={2023}
+}
+```
 
 
 ## Contact
